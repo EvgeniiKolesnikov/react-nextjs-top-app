@@ -2,11 +2,11 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "typescript-eslint"
+    "@typescript-eslint"
   ],
   "rules": {
     "semi":"off",
-    "typescript-eslint/semi": [
+    "@typescript-eslint/semi": [
       "warn"
     ],
     "@typescript-eslint/no-empty-interface": [
@@ -17,7 +17,7 @@
     ]
   },
   "extends": [
-    "eslint/recommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended"
