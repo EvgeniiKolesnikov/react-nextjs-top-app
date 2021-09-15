@@ -23,8 +23,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: menu.flatMap(m => m.pages.map(p => `/courses/` + p.alias)),
     fallback: true 
-  }
-}
+  };
+};
 
 export const getStaticProps: GetStaticProps<CourseProps> = async ({params}: GetStaticPropsContext<ParsedUrlQuery>) => {
   if (!params) {
@@ -32,7 +32,6 @@ export const getStaticProps: GetStaticProps<CourseProps> = async ({params}: GetS
       notFound: true
     };
   }
-
 
   const { data: menu } = await axios.post<MenuItem[]>(
     process.env.NEXT_PUBLIC_DOMAIN + `/api/top-page/find`,
@@ -64,7 +63,7 @@ interface CourseProps extends Record<string, unknown> {
   page: TopPageModel;
   products: ProductModel[];
 }
+
 function getStaticPath() {
   throw new Error('Function not implemented.');
 }
-
