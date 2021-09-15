@@ -5,5 +5,5 @@ export const TopPageComponent = ({
   products,
   firstCategory,
 }: TopPageComponentProps): JSX.Element => {
-  return <div>{products && products.length}</div>;
+  return <>{products && products.length}</>;
 };
