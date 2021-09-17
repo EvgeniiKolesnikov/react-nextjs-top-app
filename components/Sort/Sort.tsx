@@ -15,18 +15,18 @@ export const Sort = ({
       <span
         onClick={() => setSort(SortEnum.Rating)}
         className={cn({
-          [styles.active]: sort === SortEnum.Rating
+          [styles.active]: sort == SortEnum.Rating
         })}
       >
-        <SortIcon className={styles.sortIcon} />По&nbsp;рейтингу
+        <SortIcon className={styles.sortIcon} />По рейтингу
       </span>
       <span
         onClick={() => setSort(SortEnum.Price)}
         className={cn({
-          [styles.active]: sort === SortEnum.Price
+          [styles.active]: sort == SortEnum.Price
         })}
       >
-        <SortIcon className={styles.sortIcon} />По&nbsp;цене
+        <SortIcon className={styles.sortIcon} />По цене
       </span>
     </div>
   );
