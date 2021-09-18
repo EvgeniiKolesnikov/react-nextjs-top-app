@@ -1,4 +1,4 @@
-import { Advantages, Card, HhData, Htag, P, Sort, Tag } from '../../components';
+import { Advantages, Card, HhData, Htag, P, Product, Sort, Tag } from '../../components';
 import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.scss';
 import { TopLevelCategory } from '../../interfaces/page.interface';
@@ -11,10 +11,13 @@ export const TopPageComponent = ({
   products,
   firstCategory,
 }: TopPageComponentProps): JSX.Element => {
-  const [{ products: sortedProducts, sort }, dispathSort] = useReducer(sortReducer, {
-    products,
-    sort: SortEnum.Rating,
-  });
+  const [{ products: sortedProducts, sort }, dispathSort] = useReducer(
+    sortReducer,
+    {
+      products,
+      sort: SortEnum.Rating,
+    }
+  );
 
   const setSort = (sort: SortEnum) => {
     dispathSort({ type: sort });
@@ -33,7 +36,8 @@ export const TopPageComponent = ({
       </div>
 
       <div>
-        {sortedProducts && sortedProducts.map((p) => <div key={p._id}>{p.title}</div>)}
+        {sortedProducts &&
+          sortedProducts.map((p) => <Product key={p._id} product={p} />)}
       </div>
 
       <div className={styles.hhTitle}>
