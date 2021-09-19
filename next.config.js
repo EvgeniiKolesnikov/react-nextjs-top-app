@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    domains: ['courses-top.ru'],
+  },
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg?$/,
@@ -11,7 +14,7 @@ module.exports = {
                 prettier: false,
                 svgo: true,
                 svgoConfig: {
-                  plugins: [{removeViewBox: false}],
+                  plugins: [{ removeViewBox: false }],
                 },
                 titleProp: true,
               },
@@ -22,8 +25,8 @@ module.exports = {
           },
         },
       ],
-    })
+    });
 
-    return config
+    return config;
   },
-}
+};
