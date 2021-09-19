@@ -9,11 +9,10 @@ import Image from 'next/image';
 
 export const Product = ({
   product,
-  className,
   ...props
 }: ProductProps): JSX.Element => {
   return (
-    <Card className={styles.product}>
+    <Card className={styles.product} >
       <div className={styles.logo}>
         <Image 
           src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
@@ -75,7 +74,7 @@ export const Product = ({
           </div>
         )}
       </div>
-      <Divider className={styles.hr} />
+      <Divider className={cn(styles.hr, styles.hr2)} />
       <div className={styles.actions}>
         <Button appearance='primary'>Узнать подробнее</Button>
         <Button
