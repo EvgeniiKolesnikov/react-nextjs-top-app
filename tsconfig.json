@@ -9,6 +9,7 @@
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
+    "useUnknownInCatchVariables": false, // override strict's default
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
