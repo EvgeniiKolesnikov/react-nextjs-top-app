@@ -147,13 +147,16 @@
   overflow: hidden;
   max-height: auto;
   padding: 30px;
-  background: #F9F8FF;
 }
 
 .closed {
   overflow: hidden;
   max-height: 0;
   padding: 0;
+}
+
+.rateTitle a {
+  color: var(--primary);
 }
 
 @media screen and (max-width: 1320px) {
