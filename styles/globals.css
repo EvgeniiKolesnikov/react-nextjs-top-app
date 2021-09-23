@@ -31,4 +31,10 @@ a {
 	--red: #FC836D;
 	--red-light: #ffb2a4;
 	--font-family: 'Noto Sans KR', sans-serif;
+	
+	/* a11y colors */
+	--gray-dark: #6c7077;
+	--white: white;
+	--primary: #7351f5;
+	--green: #007b49;
 }
