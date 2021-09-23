@@ -14,6 +14,7 @@ import { API } from '../../helpers/api';
 
 export const ReviewForm = ({
   productId,
+  isOpened,
   className,
   ...props
 }: ReviewFormProps): JSX.Element => {
@@ -54,6 +55,7 @@ export const ReviewForm = ({
           })}
           placeholder='Имя'
           error={errors.name}
+          tabIndex={isOpened ? 0 : -1}
         />
         <Input
           {...register('title', {
@@ -62,6 +64,7 @@ export const ReviewForm = ({
           placeholder='Заголовок отзыва'
           className={styles.title}
           error={errors.title}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.rating}>
           <span>Оценка:</span>
@@ -76,6 +79,7 @@ export const ReviewForm = ({
                 rating={field.value}
                 setRating={field.onChange}
                 error={errors.rating}
+                tabIndex={isOpened ? 0 : -1}
               />
             )}
           />
@@ -88,9 +92,10 @@ export const ReviewForm = ({
           className={styles.description}
           error={errors.description}
           spellCheck='false'
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.submit}>
-          <Button appearance='primary' className={styles.button}>
+          <Button appearance='primary' tabIndex={isOpened ? 0 : -1} className={styles.button}>
             Отправить
           </Button>
           <span className={styles.info}>
