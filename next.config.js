@@ -1,4 +1,5 @@
 module.exports = {
+  basePath: '/react-nextjs-top-app',
   images: {
     domains: ['courses-top.ru'],
   },

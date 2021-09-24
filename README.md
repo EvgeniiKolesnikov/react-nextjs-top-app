@@ -1,4 +1,4 @@
 # react-nextjs-top-app  
-Open (soon) https://evgeniikolesnikov.github.io/react-nextjs-top-app/ to view it.  
+Open https://evgeniikolesnikov.github.io/react-nextjs-top-app/ to view it.  
 
 This education project is based on the course of Антон Ларичев
