@@ -2,9 +2,10 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+
 	color: var(--black);
 	background: #F5F6F8;
-	
+
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -19,29 +20,27 @@ a {
 }
 
 .visualyHidden {
+	position: absolute;
+
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	position: absolute;
 }
 
 :root {
 	--black: #3B343E;
 	--gray-light: #EBEBEB;
 	--gray: #A4A4A4;
-	--gray-dark: #787D85;
-	--white: white;
-	--primary: #7653FC;
-	--primary-hover: #5d3be7;
-	--green: #1DC37E;
+	--primary-hover: #5D3BE7;
 	--green-light: #C8F8E4;
 	--red: #FC836D;
-	--red-light: #ffb2a4;
+	--red-light: #FFB2A4;
 	--font-family: 'Noto Sans KR', sans-serif;
-	
+
 	/* a11y colors */
-	--gray-dark: #6c7077;
+	--gray-dark: #6C7077;
 	--white: white;
-	--primary: #7351f5;
-	--green: #007b49;
+	--primary: #7351F5;
+	--green: #007B49;
 }
