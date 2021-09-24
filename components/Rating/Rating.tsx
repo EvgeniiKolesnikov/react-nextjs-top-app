@@ -23,6 +23,7 @@ export const Rating = forwardRef(
 
     useEffect(() => {
       constructRating(rating);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [rating, tabIndex]);
 
     const computeFocus = (r: number, i: number): number => {

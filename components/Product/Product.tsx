@@ -5,7 +5,7 @@ import cn from 'classnames';
 import { Card } from '../Card/Card';
 import { Button, Divider, Rating, Review, ReviewForm, Tag } from '..';
 import { declOfNum, priceRu } from '../../helpers/helpers';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export const Product = motion(forwardRef(({ product, className, ...props }: ProductProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {

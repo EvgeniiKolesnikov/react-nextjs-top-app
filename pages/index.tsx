@@ -6,6 +6,7 @@ import { API } from '../helpers/api';
 import { MenuItem } from '../interfaces/menu.interface';
 import { withLayout } from '../layout/Layout';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Home({ menu }: HomeProps): JSX.Element {
   const [rating, setRating] = useState<number>(4);
 
