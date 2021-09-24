@@ -20,7 +20,7 @@ export const Sort = ({
           [styles.active]: sort == SortEnum.Rating
         })}
         aria-selected={sort == SortEnum.Rating}
-        aria-lebelledby='sort rating'
+        aria-labelledby='sort rating'
       >
         <SortIcon className={styles.sortIcon} />По рейтингу
       </button>
@@ -31,7 +31,7 @@ export const Sort = ({
           [styles.active]: sort == SortEnum.Price
         })}
         aria-selected={sort == SortEnum.Price}
-        aria-lebelledby='sort price'
+        aria-labelledby='sort price'
       >
         <SortIcon className={styles.sortIcon} />По цене
       </button>
