@@ -9,6 +9,7 @@
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
+    "start_prod": "cross-env NODE_ENV='production' next start",
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix"
   },
